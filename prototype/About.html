@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <div id="page1" data-scroll data-scroll-speed="-1" style="height: 20vh;">
+        <div id="nav">
+            <a href="../index.html">
+            <div id="nav-part1" >
+                <img src="../assets/logo.jpg" alt="">
+            </div></a>
+            <div id="nav-part2">
+                <a href="#page3"><h4>courses</h4></a>
+                <a href="../index.html #footer"><h4>About</h4></a>
+                <a href="../contactUS.html"><h4>Contact</h4></a>
+                <a href="/"><h4>ChatBot</h4></a>
+            </div>
+        </div>       
+    </div>
+<!-- Instructions Section -->
+<div class="instructions" style="margin-top: 10vh; background-color: #151515; color: #fff;">
+    <h3>How can I help you?</h3>
+    <p>Welcome to our chatbot! You can use me to explore various educational topics and find relevant courses. Here's how:</p>
+    <ul>
+        <li><strong>For Exploring Courses:</strong> Ask about specific categories or topics you're interested in, such as "Tell me about Digital Electronics" or "Find courses on Data Structures and Algorithms".</li>
+        <li><strong>For Specific Courses:</strong> Request information about a particular course by mentioning its topic or creator, like "What courses are available by Neso Academy?" or "Learn more about Von Neumann's Architecture".</li>
+        <li><strong>For Engineering:</strong> Specify a subdomain of engineering to explore, such as "I'm interested in Computer Science" or "Explore AIML courses".</li>
+        <li><strong>For Assistance:</strong> If you need help or have any questions, feel free to ask! You can inquire about the bot's capabilities or seek guidance on using the bot effectively.</li>
+        <li><strong>For Other Queries:</strong> You can also ask about the current time, request a joke for some fun, or inquire about contacting support if you need further assistance.</li>
+        <li><strong>For Interactive Learning:</strong> Engage with the bot by asking for explanations, examples, or further resources on specific educational topics. For example, "Explain Boolean Algebra" or "Provide more resources on Python programming."</li>
+        <li><strong>For Course Recommendations:</strong> Share your interests or goals with the bot, and it can suggest relevant courses based on your preferences. Try phrases like "I want to learn about machine learning" or "Recommend courses for beginners in web development."</li>
+        <li><strong>For Personalized Assistance:</strong> If you're unsure where to start or need advice on your learning journey, feel free to ask for personalized recommendations or guidance. Simply describe your background, interests, or goals, and the bot will tailor its responses accordingly.</li>
+    </ul>
+    <p>Ready to get started? Just type your query or topic of interest, and I'll do my best to assist you!</p>
+</div>
+
+
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                
+
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #ffffff;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="responses.js"></script>
+<script src="chat.js"></script>
+
+</html>
